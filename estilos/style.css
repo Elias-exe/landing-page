@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+
+:root{
+  --cor0:#73321A;
+  --cor1:#592A0F;
+  --cor2:#401B05;
+  --cor3:#260B01;
+
+  --fonte-padrão:Arial, Helvetica, sans-serif;
+  --fonte-subtitulo:'Lobster Two', cursive;
+  --fonte-titulo:'Akaya Telivigala',cursive;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  
+}
+
+body{
+  font-size: 100%;
+  background-image: linear-gradient(to right, var(--cor0),var(--cor3));
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+  background-image: linear-gradient(to right, var(--cor0),var(--cor3));
+  
+}
+
+.icone-git{
+  border-radius: 50%;
+  height: 50px;
+}
+
+.icone-git:hover{
+  height: 60px;
+  transition: 0.3s;
+}
+
+header>nav{
+  display: flex;
+  gap: 40px;
+}
+
+header>nav>a{
+  font-family: var(--fonte-padrão);
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+header>nav>a:hover{
+  padding: 5px;
+  border-radius: 10%;
+  background-color: white;
+  color: #260B01;
+  transition: 0.6s;
+}
+
+main{
+  margin-bottom: 48px;
+  border-top: 0.4px solid rgba(255, 255, 255, 0.151);
+  
+}
+
+.conteudo-principal{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal>div{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.conteudo-principal>div>h1{
+  font-family: var(--fonte-titulo);
+  font-weight: 400;
+  font-size: 64px;
+  color: rgb(253, 245, 245);
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo-principal>div>h2{
+  font-weight: 400;
+  font-size: 24px;
+  font-family: var(--fonte-subtitulo);
+  color: rgb(253, 245, 245);
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo-principal>div>button{
+  background-color:#ad4d2a;
+  width: 180px;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  font-family: var(--fonte-padrão);
+  color: rgb(24, 23, 23);
+}
+
+.botao-adotar:hover{
+  background-color:#ad4d2a77;
+  transition: 0.6s;
+}
+
+.conteudo-principal>img{
+  border-radius: 50%;
+  height: 330px;
+}
+
+.conteudo-secundario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.conteudo-secundario>h3{
+  border-top: 0.4px solid rgba(255, 255, 255, 0.151);
+  padding-top: 48px;
+  color:rgb(253, 245, 245);
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  font-family: var(--fonte-padrão);
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.conteudo-secundario>ol{
+  color:rgb(253, 245, 245);
+  font-family: var(--fonte-padrão);
+}
+
+.conteudo-secundario>ol>li{
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 200;
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer{
+  padding: 16px;
+  color:rgb(253, 245, 245);
+  border-top: 0.4px solid rgba(255, 255, 255, 0.151);
+  text-align: center;
+  font-family: var(--fonte-padrão);
+  text-decoration: none;
+}
+
+footer>a{
+  color:rgb(253, 245, 245);
+  text-decoration: none;
+  padding: 60px;
+}
