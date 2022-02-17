@@ -170,3 +170,16 @@ footer>a{
   text-decoration: none;
   padding: 60px;
 }
+
+@media (max-width:600px){
+  .conteudo-principal,.conteudo-principal>div{
+    display: block;
+    padding: 35px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  .conteudo-principal>div>button{
+    margin-top: 15px;
+  }
+}
